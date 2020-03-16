@@ -7,13 +7,15 @@ import { LoremIpsumComponent } from './components/lorem-ipsum.component';
 import { SectionIntroComponent } from './components/section-intro/section-intro.component';
 import { ScrollSpyDirective } from './directives/scroll-spy.directive';
 import { MaterialModule } from './material.module';
+import { SectionFooterComponent } from './components/section-footer/section-footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ScrollSpyDirective,
     LoremIpsumComponent,
-    SectionIntroComponent
+    SectionIntroComponent,
+    SectionFooterComponent
   ],
   imports: [
     BrowserModule,

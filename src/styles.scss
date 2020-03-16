@@ -2,7 +2,13 @@
 
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow: hidden;
   height: 90vh;
+  margin: 0px;
+  font-family: "Rubik", sans-serif;
 }
