@@ -1,0 +1,15 @@
+.current-section {
+  background-color: cornflowerblue
+}
+.current-section::after { 
+  content: "\039e";
+  background-color: yellow; 
+  color: red;
+
+}
+.menu-spacer {
+  flex: 1 1 auto;
+}
+.menu > a.active {
+  color: red;
+}
