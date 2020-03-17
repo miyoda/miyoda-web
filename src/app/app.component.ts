@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { MatSidenav } from '@angular/material/sidenav';
 import * as AOS from 'aos';
-
 
 interface SectionMenuItem {
   id: string;
@@ -13,6 +13,9 @@ interface SectionMenuItem {
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
+
+  @ViewChild('sidenav') sidenav: MatSidenav;
+
   currentSection = 'intro';
   sidenavOpened: boolean;
   sections: SectionMenuItem[] = [
@@ -37,6 +40,7 @@ export class AppComponent implements OnInit {
   }
 
   scrollTo(section) {
+    this.sidenav.close();
     document.querySelector('#' + section).scrollIntoView({ behavior: 'smooth'});
   }
 }

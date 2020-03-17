@@ -14,7 +14,7 @@
 
 <mat-sidenav-container fxFlexFill>
   <mat-sidenav mode="over" [(opened)]="sidenavOpened" #sidenav>
-    <mat-action-list class="menu" (click)="sidenav.toggle()">
+    <mat-action-list class="menu">
       <button *ngFor="let section of sections" (click)="scrollTo(section.id)" [class.active]="currentSection===section.id" mat-list-item >{{section.title}}</button>
     </mat-action-list>
   </mat-sidenav>
