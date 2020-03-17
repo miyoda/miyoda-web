@@ -4,10 +4,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { LoremIpsumComponent } from './components/lorem-ipsum.component';
+import { SectionFooterComponent } from './components/section-footer/section-footer.component';
 import { SectionIntroComponent } from './components/section-intro/section-intro.component';
+import { SectionTimelineComponent } from './components/section-timeline/section-timeline.component';
+import { TimelineComponent } from './components/timeline/timeline.component';
 import { ScrollSpyDirective } from './directives/scroll-spy.directive';
 import { MaterialModule } from './material.module';
-import { SectionFooterComponent } from './components/section-footer/section-footer.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { SectionFooterComponent } from './components/section-footer/section-foot
     ScrollSpyDirective,
     LoremIpsumComponent,
     SectionIntroComponent,
-    SectionFooterComponent
+    SectionFooterComponent,
+    SectionTimelineComponent,
+    TimelineComponent
   ],
   imports: [
     BrowserModule,

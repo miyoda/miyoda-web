@@ -10,6 +10,16 @@
 .menu-spacer {
   flex: 1 1 auto;
 }
-.menu > a.active {
+.menu > button.active {
   color: red;
 }
+.title {
+  cursor: pointer;
+}
+// .mat-toolbar {
+//  position: fixed;
+//  z-index: 100; 
+// }
+// .mat-sidenav-container {
+//  padding-top: 64px;
+// }
