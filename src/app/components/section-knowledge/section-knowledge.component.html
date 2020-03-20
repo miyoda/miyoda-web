@@ -1,0 +1,24 @@
+<div class="container">
+  <h2 style="margin:0">Conocimientos</h2>
+  <h3>¿Qué sé usar y qué <span class="expert">controlo más</span>?</h3>
+  <div class="row">
+    <div *ngFor="let knowledgeCategory of knowledge" class="col-sm-12 p-1" data-aos="fade-up">
+      <mat-card>
+        <mat-card-title>{{knowledgeCategory.name}}</mat-card-title>
+        <mat-card-subtitle>{{knowledgeCategory.description}}</mat-card-subtitle>
+        <mat-card-content class="row align-top">
+          <app-knowledge-block class="col-sm-4" *ngFor="let knowledgeSubategory of knowledgeCategory.items" [title]="knowledgeSubategory.name" [items]="knowledgeSubategory.items"></app-knowledge-block>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="col-sm-12 p-1" data-aos="fade-up">
+      <mat-card>
+        <mat-card-title>¡Preferidas!</mat-card-title>
+        <mat-card-subtitle>Mi stack tecnológico preferido. Aunque la elección depende de las necesidades del proyecto que puede ir desde una simple lambda o aplicación desplegada en Heroku hasta una arquitectura de microservicios orientada a eventos.</mat-card-subtitle>
+        <mat-card-content>
+          <app-knowledge-block title="" [items]="preferred"></app-knowledge-block>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>

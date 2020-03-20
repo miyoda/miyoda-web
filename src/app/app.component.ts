@@ -20,9 +20,10 @@ export class AppComponent implements OnInit {
   sidenavOpened: boolean;
   sections: SectionMenuItem[] = [
     {id: 'timeline', title: 'Timeline'},
-    {id: 'section2', title: 'Section 2'},
-    {id: 'section3', title: 'Section 3'},
-    {id: 'section4', title: 'Section 4'},
+    {id: 'knowledge', title: 'Conocimientos'},
+    {id: 'creations', title: 'Creaciones'},
+    {id: 'continuous-improvement', title: 'Mejora continua'},
+    {id: 'other', title: 'Más'},
   ];
 
 

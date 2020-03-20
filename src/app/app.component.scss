@@ -16,10 +16,9 @@
 .title {
   cursor: pointer;
 }
-// .mat-toolbar {
-//  position: fixed;
-//  z-index: 100; 
-// }
-// .mat-sidenav-container {
-//  padding-top: 64px;
-// }
+#content-scroll {
+  overflow-x: hidden;
+}
+section {
+  margin-bottom: 20px;
+}

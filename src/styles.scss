@@ -1,8 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 @import '~bootstrap/scss/bootstrap-reboot';
 @import '~bootstrap/scss/bootstrap-grid';
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 html {
   scroll-behavior: smooth;
@@ -13,4 +13,8 @@ body {
   height: 90vh;
   margin: 0px;
   font-family: "Rubik", sans-serif;
+}
+
+button:focus {
+  outline: none;
 }

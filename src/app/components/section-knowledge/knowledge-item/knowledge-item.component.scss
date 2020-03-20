@@ -1,0 +1,32 @@
+
+
+.item {
+  display: inline-block;
+  width: 65px;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.icon-box {
+  height: 30px;
+  overflow: hidden;
+}
+.icon {
+  width: 30px;
+}
+.icon:hover {
+  filter: grayscale(80%);
+}
+.name {
+  text-overflow: ellipsis;
+  font-size: 0.7em;
+  line-height: 1.2em;
+  padding-top: 3px;
+}
+.expert > .name {
+  color: orange;
+  font-weight: bold;
+  text-shadow: 0px 0px 30px rgba(255, 230, 5, 1);
+
+}

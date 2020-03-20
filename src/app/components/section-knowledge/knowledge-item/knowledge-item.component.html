@@ -1,0 +1,8 @@
+<div class="item" 
+  [class.expert]="knowledge.expert" 
+  (click)="open(knowledge.url)"
+  [title]="knowledge.name"
+  >
+  <div class="icon-box"><img class="icon" [src]="knowledge.img" [alt]="knowledge.name" /></div>
+  <div class="name" >{{knowledge.name}}</div>
+</div>

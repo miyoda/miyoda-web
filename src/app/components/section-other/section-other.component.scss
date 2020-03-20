@@ -1,0 +1,23 @@
+.image-box {
+  width: 100%;
+  position: relative;
+}
+
+.image-box > img {
+  width: 100%;
+}
+
+.text-box {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  color: white;
+  background-color: #333333c2;
+  line-height: 1.5em;
+  padding: 5px;
+}
+
+.text-box > h3 {
+  margin-bottom: 0px;
+} 
