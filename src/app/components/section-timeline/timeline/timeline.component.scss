@@ -2,8 +2,6 @@
 
 // variables - colors
 
-$main-text: #7f8c97; // main text
-$link: #acb7c0; // anchor tags
 $background: #ffffff00; // body background color
 $line-color: #3f51b5; // body background color
 
@@ -13,11 +11,14 @@ $color-3: #ffffff; // white
 $color-4: #75ce66; // green
 $color-5: #f0ca45; // yellow
 
-// variables - fonts
-$primary-font: 'Droid Serif', serif;
-$secondary-font: 'Open Sans', sans-serif;
+.picture {
 
-// mixins - rem fallback - credits: http://zerosixthree.se/
+}
+
+.icon {
+	float: right;
+	width: 50px;
+}
 
 @function calculateRem($size) {
   $remSize: $size / 16px;
@@ -71,18 +72,7 @@ Primary style
 }
 
 section {
-	font: {
-		size: 100%;
-		family: $primary-font;
-	}
-	color: $main-text;
 	background-color: $background;
-}
-
-a {
-	color: $link;
-	text-decoration: none;
-	font-family: $secondary-font;
 }
 
 img {
@@ -90,7 +80,6 @@ img {
 }
 
 h1, h2 {
-	font-family: $secondary-font;
 	font-weight: bold;
 }
 
@@ -277,12 +266,12 @@ header {
 	.cd-read-more {
 		float: right;
 		padding: .8em 1em;
-		background: $link;
+		background: red;
 		color: $color-3;
 		@include border-radius;
 
 		.no-touch &:hover {
-			background-color: lighten($link, 5%);
+			background-color: lighten(red, 5%);
 		}
 	}
 

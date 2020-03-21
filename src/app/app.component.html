@@ -1,5 +1,5 @@
 
-<mat-toolbar color="primary">
+<mat-toolbar color="primary" class="header">
   <mat-toolbar-row class="content">
     <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
       <mat-icon>menu</mat-icon>
@@ -22,14 +22,14 @@
     <section id="intro">
       <app-section-intro></app-section-intro>
     </section>
-    <section id="creations">
-      <app-section-creations></app-section-creations>
-    </section>
     <section id="timeline">
       <app-section-timeline></app-section-timeline>
     </section>
     <section id="knowledge">
       <app-section-knowledge></app-section-knowledge>
+    </section>
+    <section id="creations">
+      <app-section-creations></app-section-creations>
     </section>
     <section id="continuous-improvement">
       <app-section-continuous-improvement></app-section-continuous-improvement>

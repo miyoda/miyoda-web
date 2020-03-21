@@ -43,12 +43,13 @@ export class SectionKnowledgeComponent implements OnInit {
         {
           name: 'Bases de datos',
           items: [
-            {name: 'mysql', img: 'assets/img/knowledges/mysql.png', expert: true, url: 'https://www.mysql.com'},
-            {name: 'postgresql', img: 'assets/img/knowledges/postgresql.png', expert: false, url: 'https://www.postgresql.org'},
+            {name: 'MySql', img: 'assets/img/knowledges/mysql.png', expert: true, url: 'https://www.mysql.com'},
+            {name: 'Postgresql', img: 'assets/img/knowledges/postgresql.png', expert: false, url: 'https://www.postgresql.org'},
             {name: 'elastic', img: 'assets/img/knowledges/elastic.png', expert: false, url: 'https://www.elastic.co'},
-            {name: 'cassandra', img: 'assets/img/knowledges/cassandra.Default', expert: false, url: 'http://cassandra.apache.org'},
+            {name: 'Cassandra', img: 'assets/img/knowledges/cassandra.Default', expert: false, url: 'http://cassandra.apache.org'},
             {name: 'mongodb', img: 'assets/img/knowledges/mongodb.png', expert: false, url: 'https://www.mongodb.com'},
             {name: 'db2', img: 'assets/img/knowledges/db2.png', expert: false, url: 'https://www.ibm.com/products/db2-database'},
+            {name: 'influxdb', img: 'assets/img/knowledges/influxdb.png', expert: false, url: 'https://www.influxdata.com/products/influxdb-overview/'},
           ],
         },
         {

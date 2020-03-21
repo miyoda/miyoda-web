@@ -4,6 +4,11 @@
 @import '~bootstrap/scss/bootstrap-grid';
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
+$primary-font: "Rubik", sans-serif;
+$main-text: #21272c; // main text
+$link: #215783; // anchor tags
+$link_hover: #3688ca; // anchor tags
+
 html {
   scroll-behavior: smooth;
 }
@@ -12,9 +17,26 @@ body {
   overflow: hidden;
   height: 90vh;
   margin: 0px;
-  font-family: "Rubik", sans-serif;
+}
+
+body, .mat-card {
+  color: $main-text;
+  
+	font: {
+		size: 100%;
+		family: $primary-font;
+	}
 }
 
 button:focus {
   outline: none;
+}
+
+a {
+	color: $link;
+	text-decoration: none;
+}
+a:hover {
+	color: $link_hover;
+	text-decoration: underline;
 }
