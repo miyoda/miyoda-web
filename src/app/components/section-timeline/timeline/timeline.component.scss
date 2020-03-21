@@ -6,19 +6,7 @@ $background: #ffffff00; // body background color
 $line-color: #3f51b5; // body background color
 
 $color-1: #303e49; // blue dark
-$color-2: #c03b44; // red
 $color-3: #ffffff; // white
-$color-4: #75ce66; // green
-$color-5: #f0ca45; // yellow
-
-.picture {
-
-}
-
-.icon {
-	float: right;
-	width: 50px;
-}
 
 @function calculateRem($size) {
   $remSize: $size / 16px;
@@ -46,10 +34,10 @@ $L:     1170px;
 
 @mixin MQ($canvas) {
   @if $canvas == S {
-   @media only screen and (min-width: $S) { @content; } 
+   @media only screen and (max-width: $M) { @content; } 
   }
   @else if $canvas == M {
-   @media only screen and (min-width: $M) { @content; } 
+   @media only screen and (min-width: $M) and (max-width: $L) { @content; } 
   }
   @else if $canvas == L {
    @media only screen and (min-width: $L) { @content; } 
@@ -118,14 +106,14 @@ header {
 		font-size: 18px;
 	}
 
-	@include MQ(L) {
+	/*@include MQ(L) {
 		height: 300px;
 		line-height: 300px;
 
 		h1 {
 			font-size: 24px;
 		}
-	}
+	}*/
 }
 
 #cd-timeline {
@@ -147,7 +135,7 @@ header {
 		background: $line-color;
 	}
 
-	@include MQ(L) {
+	/*@include MQ(L) {
 		margin: {
 			top: 3em;
 			bottom: 3em;
@@ -157,7 +145,7 @@ header {
 			left: 50%;
 			margin-left: -2px;
 		}
-	}
+	}*/
 }
 
 .cd-timeline-block {
@@ -173,7 +161,7 @@ header {
 		margin-bottom: 0;
 	}
 
-	@include MQ(L) {
+	/*@include MQ(L) {
 		margin: 4em 0;
 
 		&:first-child {
@@ -183,7 +171,7 @@ header {
 		&:last-child {
 			margin-bottom: 0;
 		}
-	}
+	}*/
 }
 
 .cd-timeline-img {
@@ -206,25 +194,12 @@ header {
 		margin-top: -12px;
 	}
 
-	&.cd-picture {
-		background: $color-4;
-	}
-
-	&.cd-movie {
-		background: $color-2;
-	}
-
-	&.cd-location {
-		background: $color-5;
-	}
-
-	@include MQ(L) {
+	/*@include MQ(L) {
 		width: 60px;
 		height: 60px;
 		left: 50%;
 		margin-left: -30px;
 
-		/* Force Hardware Acceleration in WebKit */
 		-webkit-transform: translateZ(0);
 		-webkit-backface-visibility: hidden;
 
@@ -236,7 +211,7 @@ header {
 			visibility: visible;
 			animation: cd-bounce-1 .6s;
 		}
-	}
+	}*/
 }
 
 @keyframes cd-bounce-1 {
@@ -260,7 +235,7 @@ header {
 	margin-left: 60px;
 	background: $color-3;
 	@include border-radius;
-	padding: 1em;
+	padding: 0;
 	@include clearfix;
 
 	.cd-read-more {
@@ -276,8 +251,9 @@ header {
 	}
 
 	.cd-date {
-		float: left;
-		padding: .8em 0;
+		position: absolute;
+		bottom: 0;
+		padding: .8em;
 		opacity: .7;
 	}
 
@@ -306,9 +282,9 @@ header {
 		}
 	}
 
-	@include MQ(L) {
+	/*@include MQ(L) {
 		margin-left: 0;
-		padding: 1.6em;
+		padding: 0em;
 		width: 45%;
 
 		&::before {
@@ -360,7 +336,7 @@ header {
 			visibility: visible;
 			animation: cd-bounce-2 .6s;
 		}
-	}
+	}*/
 }
 
 @include MQ(L) {
@@ -400,4 +376,92 @@ header {
 	100% {
 		transform: translateX(0);
 	}
+}
+
+
+.cd-icon {
+	float: right;
+	width: 50px;
+}
+
+.cd-timeline-content {
+
+}
+
+.cd-text {
+	padding: 1.3em;
+
+	@include MQ(S) {
+		width: 100%;
+		padding-top: 2em;
+	}
+	@include MQ(M) {
+		width: 50%;
+		padding-bottom: 2em;
+	}
+	@include MQ(L) {
+		float: none;
+		width: 70%;
+		padding-bottom: 2em;
+	}
+}
+
+.cd-picture {
+	width: 100%;
+	object-fit: contain;
+	object-position: right;
+
+	@include MQ(M) {
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 50%;
+		max-height: 100%;
+		margin-left: 15px;
+	}
+	@include MQ(L) {
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 30%;
+		max-height: 100%;
+		margin-left: 15px;
+	}
+}
+
+.cd-date {
+	@include MQ(S) {
+		right: 0;
+		top: 0;
+	}
+
+	@include MQ(M) {
+		left: 0;
+		top: auto;
+		bottom: 0;
+	}
+
+	@include MQ(L) {
+		left: 0;
+		top: auto;
+		bottom: 0;
+	}
+}
+
+.cd-timeline-img{
+	background-color: #75ce66; // r
+}
+
+.category-work {
+	background-color: #c03b44; // red
+}
+
+.category-studies {
+	background-color: #f0ca45; // red
+
+}
+
+.category-star {
+	background-color: #75ce66; // red
+
 }
