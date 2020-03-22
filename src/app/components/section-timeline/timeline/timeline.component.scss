@@ -469,3 +469,11 @@ header {
 	background-color: #75ce66; // red
 
 }
+
+.cd-horizontal-picture-container {
+	text-align: center;
+}
+.cd-horizontal-picture-container > img {
+	width:80%;
+	max-width: 500px;
+}
