@@ -34,14 +34,20 @@ export class AppComponent implements OnInit {
     document.getElementById('content-scroll').addEventListener('scroll', () => {
       scrollRef <= 10 ? scrollRef++ : AOS.refresh();
     });
+    setTimeout(() => {
+      AOS.refresh();
+    }, 500);
   }
 
   onSectionChange(sectionId: string) {
     this.currentSection = sectionId;
+    history.replaceState(undefined, undefined, '#' + sectionId);
   }
 
   scrollTo(section) {
     this.sidenav.close();
-    document.querySelector('#' + section).scrollIntoView({ behavior: 'smooth'});
+    const hash = '#' + section;
+    document.querySelector(hash).scrollIntoView({ behavior: 'smooth'});
+    history.replaceState(undefined, undefined, hash);
   }
 }
