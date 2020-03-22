@@ -3,6 +3,7 @@
 @import '~bootstrap/scss/bootstrap-reboot';
 @import '~bootstrap/scss/bootstrap-grid';
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import '~@mdi/font/css/materialdesignicons.min.css';
 
 $primary-font: "Rubik", sans-serif;
 $main-text: #21272c; // main text
@@ -32,11 +33,25 @@ button:focus {
   outline: none;
 }
 
-a {
+a, .tooltip {
 	color: $link;
 	text-decoration: none;
 }
-a:hover {
+a:hover, .tooltip:hover {
 	color: $link_hover;
 	text-decoration: underline;
+}
+
+.back {
+	color: white;
+	a, .to-tip {
+		cursor: pointer;
+		color: #c4cefc;
+		text-decoration: none;
+	}
+	a:hover, .to-tip:hover {
+		color: #9bacfc;
+		text-decoration: underline;
+	}
+	
 }

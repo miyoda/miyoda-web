@@ -5,7 +5,6 @@
 }
 
 .back {
-  color: white;
   position: relative;
   background-color: #3f51b5;
   padding-left: 5vw;
@@ -18,4 +17,45 @@
     100% 100%,
     100% calc(8vw),
   );
+}
+
+::ng-deep {
+  .photo-tooltip-family, .photo-tooltip-flecha, .photo-tooltip-friends {
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 250px;
+  }
+
+  .photo-tooltip-family {
+    background-image: url("../../../assets/img/thanks/family.jpg");
+  }
+
+  .photo-tooltip-flecha {
+    background-image: url("../../../assets/img/thanks/flecha.jpg");
+  }
+
+  .photo-tooltip-friends {
+    background-image: url("../../../assets/img/thanks/friends.jpg");
+  }
+}
+
+
+.social-icons {
+  margin-top: 1.25rem;
+}
+
+.social-icons a i {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-right: 1rem;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.social-icons a:hover i {
+  color: #000000;
 }
