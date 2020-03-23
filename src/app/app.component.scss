@@ -1,3 +1,33 @@
+mat-toolbar{
+  position: fixed;
+  z-index: 100;
+  top: 0;
+}
+
+mat-sidenav-container {
+  margin-top: 64px;
+
+  @media (max-width: 599px) {
+    margin-top: 56px;
+  }
+}
+
+mat-sidenav {
+  position: fixed;
+  top: 64px;
+
+  @media (max-width: 599px) {
+    top: 56px;
+  }
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -80px;
+  visibility: hidden;
+}
+
 .current-section {
   background-color: cornflowerblue
 }
@@ -16,13 +46,14 @@
 .title {
   cursor: pointer;
 }
-#content-scroll {
-  overflow-x: hidden;
-}
 section {
   margin-bottom: 20px;
 }
 
 .header *, .header button {
   color: white;
+}
+
+#footer {
+  margin-bottom: 0;
 }

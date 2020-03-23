@@ -12,32 +12,39 @@
   </mat-toolbar-row>
 </mat-toolbar>
 
-<mat-sidenav-container fxFlexFill>
+<mat-sidenav-container>
   <mat-sidenav mode="over" [(opened)]="sidenavOpened" #sidenav>
     <mat-action-list class="menu">
       <button *ngFor="let section of sections" (click)="scrollTo(section.id)" [class.active]="currentSection===section.id" mat-list-item >{{section.title}}</button>
     </mat-action-list>
   </mat-sidenav>
-  <mat-sidenav-content id="content-scroll" fxFlexFill appScrollSpy [spiedTags]="['SECTION']" (sectionChange)="onSectionChange($event)">
-    <section id="intro">
+  <mat-sidenav-content >
+    <section>
+      <a class="anchor section-spy" id="intro"></a>
       <app-section-intro></app-section-intro>
     </section>
-    <section id="timeline">
+    <section>
+      <a class="anchor section-spy" id="timeline"></a>
       <app-section-timeline></app-section-timeline>
     </section>
-    <section id="knowledge">
+    <section>
+      <a class="anchor section-spy" id="knowledge"></a>
       <app-section-knowledge></app-section-knowledge>
     </section>
-    <section id="creations">
+    <section>
+      <a class="anchor section-spy" id="creations"></a>
       <app-section-creations></app-section-creations>
     </section>
-    <section id="continuous-improvement">
+    <section>
+      <a class="anchor section-spy" id="continuous-improvement"></a>
       <app-section-continuous-improvement></app-section-continuous-improvement>
     </section>
-    <section id="other">
+    <section>
+      <a class="anchor section-spy" id="other"></a>
       <app-section-other></app-section-other>
     </section>
-    <section id="footer">
+    <section>
+      <a class="anchor section-spy" id="footer"></a>
       <app-section-footer></app-section-footer>
     </section>
   </mat-sidenav-content>

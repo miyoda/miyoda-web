@@ -10,16 +10,6 @@ $main-text: #21272c; // main text
 $link: #215783; // anchor tags
 $link_hover: #3688ca; // anchor tags
 
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  overflow: hidden;
-  height: 90vh;
-  margin: 0px;
-}
-
 body, .mat-card {
   color: $main-text;
   

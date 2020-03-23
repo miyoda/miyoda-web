@@ -14,13 +14,11 @@ import { SectionKnowledgeComponent } from './components/section-knowledge/sectio
 import { SectionOtherComponent } from './components/section-other/section-other.component';
 import { SectionTimelineComponent } from './components/section-timeline/section-timeline.component';
 import { TimelineComponent } from './components/section-timeline/timeline/timeline.component';
-import { ScrollSpyDirective } from './directives/scroll-spy.directive';
 import { MaterialModule } from './material.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ScrollSpyDirective,
     LoremIpsumComponent,
     SectionIntroComponent,
     SectionFooterComponent,
