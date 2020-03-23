@@ -1,6 +1,7 @@
 #!/bin/bash
 mogrify -resize 260 src/assets/img/intro/ma-picture.png
 mogrify -resize 380 src/assets/img/timeline/*-picture.jpg
+mogrify -resize 800 src/assets/img/timeline/*-picture.png
 mogrify -resize 160 src/assets/img/timeline/*-icon.png
 mogrify -resize 80 src/assets/img/knowledges/*
 mogrify -resize 100 src/assets/img/creations/*-icon.png
