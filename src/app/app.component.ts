@@ -34,14 +34,6 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.scrollSpyService.sectionChange.subscribe(this.onSectionChange);
     AOS.init();
-    /*
-    let scrollRef = 0;
-    document.getElementById('content-scroll').addEventListener('scroll', () => {
-      scrollRef <= 10 ? scrollRef++ : AOS.refresh();
-    });
-    setTimeout(() => {
-      AOS.refresh();
-    }, 500);*/
   }
 
   onSectionChange = (sectionId: string) => {

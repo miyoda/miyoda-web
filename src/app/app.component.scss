@@ -40,6 +40,9 @@ a.anchor {
 .menu-spacer {
   flex: 1 1 auto;
 }
+.menu-button {
+  margin-right: 10px;
+}
 .menu > button.active {
   color: red;
 }
