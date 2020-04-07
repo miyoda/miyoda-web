@@ -126,7 +126,7 @@
           }
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy",
+          "builder": "angular-cli-ghpages:deploy --no-silent",
           "options": {}
         }
       }
