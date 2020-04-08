@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "ng deploy --cname=www.miyoda.es --no-silent"
+    "deploy": "ng deploy --cname=www.miyoda.es --no-silent --name=cicd --email=cicd@miyoda.es"
   },
   "private": true,
   "dependencies": {
