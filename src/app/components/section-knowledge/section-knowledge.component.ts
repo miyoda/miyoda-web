@@ -132,7 +132,7 @@ export class SectionKnowledgeComponent implements OnInit {
       description: 'Herramientas y paradigmas para despliegue, ejecución y operativa',
       items: [
         {
-          name: 'Itegración Continua',
+          name: 'Integración Continua',
           items: [
             {name: 'Jenkins', img: 'assets/img/knowledges/jenkins.png', expert: true, url: 'https://jenkins.io/'},
             {name: 'GitLab CI', img: 'assets/img/knowledges/gitlab.png', expert: true, url: 'https://about.gitlab.com/stages-devops-lifecycle/continuous-integration/'},
