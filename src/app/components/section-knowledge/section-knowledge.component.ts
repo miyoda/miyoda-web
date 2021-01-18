@@ -313,6 +313,13 @@ export class SectionKnowledgeComponent implements OnInit {
             {name: 'Patrones de diseño', img: 'assets/img/knowledges/patterns.png', expert: false, url: 'https://en.wikipedia.org/wiki/Software_design_pattern'},
           ],
         },
+        {
+          name: 'Electrónica',
+          items: [
+            {name: 'Arduino', img: 'assets/img/knowledges/arduino.png', expert: false, url: 'https://www.arduino.cc/'},
+            {name: 'Protothreads', img: 'assets/img/knowledges/pt.png', expert: false, url: 'http://dunkels.com/adam/pt/'},
+          ],
+        },
       ],
     },
   ];
