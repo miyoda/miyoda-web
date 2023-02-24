@@ -23,3 +23,23 @@
   text-decoration: solid;
   color: orange;
 }
+
+
+::ng-deep {
+  .photo-tooltip-rcg, .photo-tooltip-scapebox {
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 250px;
+    color: #ffffff00 !important;
+  }
+
+  .photo-tooltip-rcg {
+    background-image: url("../../../assets/img/creations/rest-coding-game2.png");
+  }
+
+  .photo-tooltip-scapebox {
+    background-image: url("../../../assets/img/creations/scapebox.jpg");
+  }
+
+}
