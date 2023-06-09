@@ -4,7 +4,7 @@
     <button mat-icon-button class="menu-button" (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
       <mat-icon>menu</mat-icon>
     </button>
-    <h2 class="title" (click)="scrollTo('intro')">@miyoda</h2>
+    <h2 class="title" (click)="scrollTo('intro')">@miguel_miyoda</h2>
     <span class="menu-spacer"></span>
     <div fxShow="true" fxHide.lt-md class="menu">
       <button *ngFor="let section of sections" (click)="scrollTo(section.id)" [class.active]="currentSection===section.id" mat-button>{{section.title}}</button>
